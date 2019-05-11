@@ -1,0 +1,212 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15 Apr, 2019, 10:48:24 PM
+    Author     : winayak
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: monospace;
+}
+nav{
+    position: sticky;
+    width: 100%;
+    background: #fff;
+    float: left;
+    padding: 10px 15px;
+    color: #75a0c3;
+    box-shadow: 0px 0px 5px 0px #666;
+    top: 0;
+    z-index: 999;
+}
+nav h3{
+    line-height: 1.5;
+    float: left;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+nav a{
+    text-decoration: none!important;
+}
+nav span:hover{
+    background: #5a6268;
+}
+nav span{
+    float: right;
+    cursor: pointer;
+    margin-left: 10px;
+    background: #75a0c3;
+    font-size: 14px;
+    border-radius: 10px 0px 0px 10px;
+}
+nav>span{
+    margin: 3px 0px;
+    border-radius: 0px 10px 10px 0px;
+    border-left: 1px solid #6993b5;
+}
+nav div{
+    float: right;
+    margin: 3px 0px;
+}
+nav button{
+    float: right;
+    padding: 10px 15px;
+    margin-left: 20px;
+    border: 0px;
+}
+nav i{
+    padding: 8px 10px;
+    border: 0px;
+    font-size: 20px;
+    color: #fff;
+}
+nav button{
+    background: #3a3b3c;
+}
+#sidebar{
+    float: left;
+    background: #3a3b3c;
+    color: #fff;
+    padding: 10px 15px;
+}
+#sidebar a{
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+#sidebar a:hover{
+    background: #75a0c3;
+}
+.active{
+    background: #75a0c3;
+}
+#main{
+    float: left;
+    padding: 10px 15px;
+}
+#main h4 span{
+    float: right;
+    background: #eaeaea;
+    transform: translate(10px,-10px);
+    border-left: 1px solid #d0d0d0;
+    font-size: 16px;
+    cursor: pointer;
+}
+#main h4 span a{
+    color: black;
+}
+#main span i{
+    padding: 16px 20px;
+}
+#main span:hover{
+    color: #666;
+}
+#main span:hover a{
+    color: #666;
+}
+#main h4{
+    margin: 10px 0px 10px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+    background: #f3f3f3;
+}
+#main #rec,#main #trans{
+    padding: 0 10px 0px 0px;
+    float: left;
+}
+#main #pay,#main #alerts{
+    padding: 0 0px 0px 10px;
+    float: left;
+}
+#main>div>div{
+    margin: 10px 0px 10px 0px;
+    float: left;
+    padding: 10px;
+    width: 100%;
+    background: #f3f3f3;
+    display: inline-block;
+}
+#pay p,#rec p{
+    float: left;
+    margin: 10px 0px 0 0;
+}
+#pay span,#rec span{
+    float: left;
+    background: #eaeaea;
+    padding: 8.5px 20px;
+    border-right: 1px solid #d0d0d0;
+}
+.table{
+    background: #f3f3f3;
+    text-align: center;
+}
+.modal p{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f7f7f7;
+    border: 1px solid #dedede;
+}
+.modal-footer button{
+    background: #75a0c3;
+    font-size: 16px;
+    padding: 5px 15px;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+}
+.modal-footer button:hover{
+    background: #5a6268;
+}
+.modal button{
+    outline: 0px;
+}
+.inp{
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+@media only screen and (min-width:1220px){
+    #sidebar{
+        height: 93vh;
+        position: sticky;
+        top: 62px;
+    }
+    nav>span{
+        display: none;        
+    }
+    nav span{
+        border-radius: 15px;
+    }
+}
+@media only screen and (max-width:1220px){
+    #main #pay, #main #alerts{
+        padding: 0px;
+    }
+    #main #rec, #main #trans{
+        padding: 0px;
+    }
+    #pay span,#rec span{
+        padding: 6.5px 10px
+    }
+    .table_div{
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+    #sidebar{
+/*        display: none;*/
+    }
+}
